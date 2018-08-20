@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gem_Game</title>
+<link rel="stylesheet" href="Gem_stle.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Gem Game</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body_container">
+        <div class="Gamedisplay">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>You will be given a random number at the start of the game.
+                        <br>
+                        There are four crystals below. By clicking on a crystal you will 
+                        add a specific amount of points to your total score.
+                        <br>
+                        You win the game by matching your total score to random number, you
+                        lose the game if you total score goes above the random number.
+                        <br>
+                        The value of each crystal is hidden from you until you click on it.
+                        <br>
+                        Each time when the game starts, the game will change the values of each 
+                        crystals. 
+                    </p>
+                </div>
+                
+            </div>
+            <div class="rowWords">
+                <div class="col-sm-6"><span id="randoNum"></span></div>
+                <div class="col-sm-6"><span id="score"></span></div>
+            </div>
+
+            <div class="row>">
+                <button onclick="myFunction1()">Click me</button>
+                <button onclick="myFunction2()">Click me</button>
+                <button onclick="myFunction3()">Click me</button>
+                <button onclick="myFunction4()">Click me</button>
+            </div>
+            <div class="row">
+                <h2>Your total score is:</h2>
+            </div>
+            <div class="row">
+                <span id="scoreGame"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <h2></h2>
+        </div>
+    </footer>
+
+
+
+<script rel="javascript" src="Gem_J.js"></script>
+
+</body>
+</html>
