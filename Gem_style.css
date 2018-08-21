@@ -1,0 +1,33 @@
+body{
+    width:1000px;
+background-color: gray;
+}
+
+img{
+    Height:200px;
+    width:200px;
+}
+
+header{
+    font-size: 50px;
+    color:aqua;
+    font-weight: bold;
+    border-style: solid;
+    border-color: coral;
+    text-align: center;
+
+}
+
+.body_container {
+    text-align: left;
+    font: 24px Courier;
+    color:black;
+
+}
+
+#targetNumber {
+    color: black;
+    font-size: 40px;
+    border:solid;
+    padding:10px;
+}

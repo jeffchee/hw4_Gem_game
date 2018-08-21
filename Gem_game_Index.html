@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gem_Game</title>
-<link rel="stylesheet" href="Gem_style.css">
+    <link rel="stylesheet" href="Gem_style.css">
 
 </head>
 
@@ -25,34 +26,51 @@
             <div class="row">
                 <div class="col-sm-12">
                     <p>You will be given a random number at the start of the game.
-                        <br>
-                        There are four crystals below. By clicking on a crystal you will 
-                        add a specific amount of points to your total score.
-                        <br>
-                        You win the game by matching your total score to random number, you
-                        lose the game if you total score goes above the random number.
-                        <br>
-                        The value of each crystal is hidden from you until you click on it.
-                        <br>
-                        Each time when the game starts, the game will change the values of each 
-                        crystals. 
+                        <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your total score.
+                        <br> You win the game by matching your total score to random number, you lose the game if you total score
+                        goes above the random number.
+                        <br> The value of each crystal is hidden from you until you click on it.
+                        <br> Each time when the game starts, the game will change the values of each crystals.
                     </p>
                 </div>
-                
-            </div>
-            <div class="rowWords">
-                <div class="col-sm-6"><span id="randonNum"></span></div>
-                <div class="col-sm-6"><span id="score"></span></div>
+
             </div>
 
-            <div class="row>">
-                <button onclick="myFunction1()">Click me</button>
-                <button onclick="myFunction2()">Click me</button>
-                <button onclick="myFunction3()">Click me</button>
-                <button onclick="myFunction4()">Click me</button>
+            <br>
+            <br>
+            <div class="rowWords">
+                <div class="col-sm-6">
+                    <span id="targetNumber">
+                    </span>
+                </div>
+                <div class="col-sm-6">
+                    <span id="win"></span>
+                    <span id="lose"></span>
+                </div>
             </div>
+            <br>
+            <br>
+            <div class="row>">
+                <button class="Number1">
+                    <img  src="Crystal_large.png" target="1" >
+                </button>
+
+                <button class="Number2">
+                    <img src="Crystal_urgentcharacter.png" target="2" value="Number2">
+                </button>
+                <button class="Number3">
+                    <img  src="Talram_Crystal.png" target="3" value="Number3">
+                </button>
+                <button class="Number4">
+                    <img  src="Shadowshard_crystal_icon.png" target="4" value="Number4">
+                </button>
+            </div>
+
             <div class="row">
-                <h2>Your total score is:</h2>
+                <h2>Your total score is:
+                    <span id="score"></span>
+                </h2>
             </div>
             <div class="row">
                 <span id="scoreGame"></span>
@@ -67,8 +85,9 @@
     </footer>
 
 
-
-<script rel="javascript" src="Gem_J.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script rel="javascript" src="Gem_J.js"></script>
 
 </body>
+
 </html>
