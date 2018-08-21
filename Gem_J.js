@@ -10,6 +10,14 @@ var gemNum3 = getRndInteger(1,12);
 var gemNum4 = getRndInteger(7,14);
 var score = 0;
 
+$("#score").text(score);
+$("#win").text(win);
+$("#lose").text(lose);
+
+
+
+
+function startGame() {
 if ((score === randomNum)){
   alert("You Win!");
   win++;
@@ -20,15 +28,16 @@ else if ((score > randomNum)) {
   lose++;
   return
 }
+}
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-$("#score").text(score);
+
 
 getRndInteger(19, 120);
-
+startGame();
 
 
 var targetNumberElement = $('#targetNumber');
